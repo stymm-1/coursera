@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="coassign">
+<head>
+	<script src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Coursera Assignment 1</title>
+</head>
+<body>
+	<div id="main" ng-controller='myController'>
+		<h1><b>Lunch Checker</b></h1>
+		<div>
+		<input type="text" id="input" placeholder="Enter items you usually eat for lunch." ng-model="items" ng-style="inputStyle">
+	    </div>
+	    <div>
+		<button ng-click="check()">Check If Too Much</button><br>
+		</div>
+		<div id="message" ng-style="messageStyle"><b>{{message}}</b>
+		</div>
+	</div>
+
+</body>
+</html>
